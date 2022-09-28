@@ -1,0 +1,32 @@
+/* Typical Devicve Breakpoints
+Pequenas telas: até 600px   já tem
+Celular: de 600px até 768px  já tem
+Tablet: de 768px até 992px 
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px 
+ */
+
+ @media screen and (min-width: 768px) {
+    
+    body, html {
+        background-image: linear-gradient(to bottom, #5F2C82, #6CD3CF);
+        height: 100vh;
+    }
+
+    main {
+        width: 700px;
+        height: 300px;
+    }
+
+    div#conteudo {
+        width: 300px;
+        height: 90%;
+    
+    }
+    
+    img {
+        width: 50%;
+        
+        align-items: flex-end;
+    }
+ }
