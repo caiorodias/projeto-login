@@ -18,15 +18,14 @@ Grandes telas: acima de 1200px
         height: 300px;
     }
 
-    div#conteudo {
-        width: 300px;
+    div#formulario {
+        width: 400px;
         height: 90%;
-    
+        display: inline-block;
     }
     
-    img {
-        width: 50%;
-        
-        align-items: flex-end;
+    div#imagem {
+        display: inline-block;
+        width: 300px;        
     }
  }

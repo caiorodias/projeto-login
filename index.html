@@ -12,29 +12,30 @@
 </head>
 <body>
     <main>
-        <img src="imagens/post10.jpg" alt="tema">
-        <div id="conteudo">
-            <h1>Login</h1>
-            <p>Seja bem-vindo-a novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-            <div class="form">
-                <form action="cadastro.py" method="post">
-                    <label for="iemail"><span class="material-icons"> person </span></label>
-                    <input type="email" name="email" id="iemail" placeholder="seu e-mail">
-                </form>
+        <section id="login">
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo-a novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                
+                    <form action="cadastro.py" method="post">
+                        <label for="iemail"><span class="material-icons"> person </span></label>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail">
+                    </form>
+
+                
+                    <form action="cadastro.py" method="post">
+                        <label for="isen"><span class="material-icons"> key </span></label>
+                        <input type="password" name="senha" id="isen" placeholder="sua senha">
+                    </form>
+                    <div id="entrar">
+                        <a href="#">Entrar</a>
+                    </div>
+                    <div id="esqueci">
+                        <a href="#">Esqueci a senha </a>
+                    </div>
             </div>
-            <div class="form">
-                <form action="cadastro.py" method="post">
-                    <label for="isen"><span class="material-icons"> key </span></label>
-                    <input type="password" name="senha" id="isen" placeholder="sua senha">
-                </form>
-            </div>
-                <div id="entrar">
-                    <a href="#">Entrar</a>
-                </div>
-                <div id="esqueci">
-                    <a href="#">Esqueci a senha </a>
-                </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
