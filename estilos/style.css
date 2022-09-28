@@ -1,0 +1,45 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: #5F2C82;
+}
+
+main {
+    text-align: left;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-end-end-radius: 10px;
+    padding: 10px;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+div.form {
+    background-color: #5F2C82;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+div#entrar {
+    background-color: #6CD3CF;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div#esqueci {
+    background-color: white;
+    border: #6CD3CF solid 1px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
