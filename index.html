@@ -18,22 +18,23 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo-a novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 
-                    <form action="cadastro.py" method="post">
-                        <label for="iemail"><span class="material-icons"> person </span></label>
-                        <input type="email" name="email" id="iemail" placeholder="seu e-mail">
-                    </form>
-
-                
-                    <form action="cadastro.py" method="post">
-                        <label for="isen"><span class="material-icons"> key </span></label>
-                        <input type="password" name="senha" id="isen" placeholder="sua senha">
-                    </form>
-                    <div id="entrar">
-                        <a href="#">Entrar</a>
-                    </div>
-                    <div id="esqueci">
-                        <a href="#">Esqueci a senha </a>
-                    </div>
+                <form action="login.py" method="post">
+                        <div class="campo">
+                            <label for="ilogin"><span class="material-icons"> person </span></label>
+                            <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" required maxlength="30">
+                            
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="isenha"><span class="material-icons"> key </span></label>
+                            <input type="password" name="senha" id="isenha" placeholder="Sua senha" required maxlength="20" minlength="8">
+                            
+                        </div>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html" class="botao">
+                            Esqueci a senha <span class="material-icons"> mail </span>
+                        </a>
+                </form>
             </div>
         </section>
     </main>

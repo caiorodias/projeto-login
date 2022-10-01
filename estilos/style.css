@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -7,13 +7,12 @@
 
 body, html {
     background-color: #5F2C82;
-    height: 10vh;
+    height: 100vh;
     width: 100vw;
 }
 
 main {
     position: relative;
-    text-align: left;
     width: 100vw;
     height: 100vh;
 }
@@ -29,15 +28,12 @@ section#login {
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
     overflow: hidden;
-    
-}
-
-form {
-    background-color: #5F2C82;
+    transition:  width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
-    display: block;;
+    display: block;
     background: #5F2C82 url(../imagens/post10.jpg) no-repeat;
     height: 200px;
     background-size: cover;
@@ -49,59 +45,111 @@ section#login > div#formulario {
     display: block;
 }
 
-main > div > h1 {
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #5F2C82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin:  5px 0px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #2d6462;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #6cd1cf;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+
+
+/* main > div > h1 {
     text-align: center;
     font-size: 1.5em;
-}
+} */
 
-main > div > p {
+/* main > div > p {
     font-size: 0.9em;
     padding: 10px;
-}
+} */
 
-div.form {
+/* div.form {
     background-color: #5F2C82;
     padding: 8px;
     border-radius: 10px;
     margin-bottom: 5px;
     width: 88%;
     margin: auto;
-}
+} */
 
-input {
+/* input {
     height: 35px;
     width: 85%;
     border-radius: 10px;
     background-color: #6CD3CF;
     text-align: center;
-}
+} */
 
-span {
+/* span {
     color: white;
-}
+} */
 
-div#entrar {
+/* div#entrar {
     background-color: #6CD3CF;
     padding: 15px;
     margin-bottom: 5px;
     border-radius: 10px;
     text-align: center;
-}
+} */
 
-div#esqueci {
+/* div#esqueci {
     background-color: white;
     border: #6CD3CF solid 1px;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-}
+} */
 
-div#entrar > a {
-    text-decoration: none;
-    color: white;
-}
 
-div#esqueci > a {
-    text-decoration: none;
-    color: darkblue;
-}
+
